@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>오늘의 할일</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="card">
+    <header class="header">
+      <h1 class="title">오늘의 할일</h1>
+      <p class="date" id="date"></p>
+    </header>
+
+    <section class="progress" aria-label="진행률">
+      <div class="progress-track" id="progress-track" role="progressbar"
+           aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+      <p class="progress-text" id="progress-text"></p>
+    </section>
+
+    <p class="notice" id="storage-notice" hidden>
+      이 브라우저에서는 저장이 되지 않아요. 새로고침하면 할일이 사라집니다.
+    </p>
+
+    <form class="add-form" id="add-form" autocomplete="off">
+      <label class="sr-only" for="new-todo">새 할일</label>
+      <input class="add-input" id="new-todo" type="text" maxlength="100"
+             placeholder="할 일을 입력하세요…">
+      <button class="btn btn-primary" type="submit">추가</button>
+    </form>
+
+    <div class="banner" id="carry-banner" hidden>
+      <span id="carry-text"></span>
+      <button class="btn btn-small" type="button" id="carry-btn">가져오기</button>
+    </div>
+
+    <nav class="filters" aria-label="필터">
+      <button class="filter" type="button" data-filter="all">전체</button>
+      <button class="filter" type="button" data-filter="active">진행 중</button>
+      <button class="filter" type="button" data-filter="done">완료</button>
+    </nav>
+
+    <ul class="list" id="list" aria-label="할일 목록"></ul>
+    <p class="empty" id="empty" hidden></p>
+
+    <footer class="footer">
+      <span id="remaining"></span>
+      <button class="btn btn-text" type="button" id="clear-done">완료한 일 지우기</button>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+    <span id="toast-text"></span>
+    <button class="btn btn-text toast-undo" type="button" id="toast-undo">실행 취소</button>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
