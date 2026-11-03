@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DemoPort | Python · Web · iOS 개발자</title>
+  <meta name="description" content="Python, HTML5, iOS 앱 개발을 주력으로 하는 개발자의 프로필과 포트폴리오입니다.">
+  <meta property="og:title" content="DemoPort | Python · Web · iOS 개발자">
+  <meta property="og:description" content="Python, HTML5, iOS 앱 개발을 주력으로 하는 개발자의 프로필과 포트폴리오입니다.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="주요 메뉴">
+      <a class="nav__logo" href="#top">DemoPort</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#about">소개</a></li>
+        <li><a href="#skills">기술</a></li>
+        <li><a href="#projects">프로젝트</a></li>
+        <li><a href="#contact">연락하기</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="container hero__inner">
+        <p class="hero__eyebrow">안녕하세요, 개발자</p>
+        <h1 class="hero__title"><span class="hero__name">홍길동</span>입니다.</h1>
+        <p class="hero__lead">Python으로 로직을 만들고, HTML5로 웹을 짓고, Swift로 iOS 앱을 만듭니다.</p>
+        <ul class="badges" aria-label="주력 기술">
+          <li class="badge badge--python">Python</li>
+          <li class="badge badge--web">HTML5</li>
+          <li class="badge badge--ios">iOS</li>
+        </ul>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#projects">프로젝트 보기</a>
+          <a class="btn btn--ghost" href="#contact">연락하기</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 class="section__title" id="about-title">소개</h2>
+        <div class="about">
+          <p>사용자가 실제로 쓰는 제품을 만드는 것을 좋아하는 개발자입니다. 백엔드와 자동화는 Python으로, 웹 프론트엔드는 표준 HTML5·CSS3·JavaScript로, 모바일은 Swift와 SwiftUI로 개발합니다.</p>
+          <p>하나의 아이디어를 서버, 웹, 앱까지 직접 이어서 구현할 수 있다는 점이 저의 강점입니다. 읽기 쉬운 코드와 빠르고 접근성 좋은 화면을 중요하게 생각합니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section--alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 class="section__title" id="skills-title">기술 스택</h2>
+        <div class="skills">
+          <article class="skill-card skill-card--python">
+            <h3>Python</h3>
+            <p class="skill-card__level">주력</p>
+            <ul>
+              <li>Python 3</li>
+              <li>FastAPI · Django · Flask</li>
+              <li>Pandas · 데이터 처리</li>
+              <li>자동화 · 크롤링</li>
+            </ul>
+          </article>
+          <article class="skill-card skill-card--web">
+            <h3>Web (HTML5)</h3>
+            <p class="skill-card__level">주력</p>
+            <ul>
+              <li>HTML5 · 시맨틱 마크업</li>
+              <li>CSS3 · Flexbox · Grid</li>
+              <li>JavaScript (ES6+)</li>
+              <li>반응형 · 웹 접근성</li>
+            </ul>
+          </article>
+          <article class="skill-card skill-card--ios">
+            <h3>iOS</h3>
+            <p class="skill-card__level">주력</p>
+            <ul>
+              <li>Swift</li>
+              <li>SwiftUI · UIKit</li>
+              <li>Core Data</li>
+              <li>App Store 배포</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Tools</h3>
+            <p class="skill-card__level">실무 사용</p>
+            <ul>
+              <li>Git · GitHub</li>
+              <li>Xcode</li>
+              <li>VS Code</li>
+              <li>Figma</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 class="section__title" id="projects-title">프로젝트</h2>
+        <div class="projects" id="project-list">
+          <!-- js/main.js가 js/projects.js의 데이터로 카드를 채웁니다 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--alt" id="contact" aria-labelledby="contact-title">
+      <div class="container contact">
+        <h2 class="section__title" id="contact-title">연락하기</h2>
+        <p class="contact__lead">채용, 협업, 외주 문의 모두 환영합니다. 메일 주시면 빠르게 답장드리겠습니다.</p>
+        <p class="contact__email">
+          <a id="email-link" href="#contact" data-user="wjdaudgh90" data-domain="gmail.com">wjdaudgh90 [at] gmail.com</a>
+        </p>
+        <a class="btn btn--primary" id="email-button" href="#contact">메일 보내기</a>
+        <ul class="socials" aria-label="소셜 링크">
+          <li><a href="https://github.com/mang901" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> DemoPort. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
