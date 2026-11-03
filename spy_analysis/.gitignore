@@ -1,0 +1,10 @@
+# PyInstaller로 만든 실행파일(exe, zip)은 올리지 않는다
+dist/
+
+# PyInstaller 빌드 중간 파일과 빌드 전용 가상환경 (build.bat을 실행하면 다시 생긴다)
+build/
+.venv/
+
+# spy_analysis.py 단독 실행 결과물
+output/
+__pycache__/
